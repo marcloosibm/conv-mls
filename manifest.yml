@@ -1,0 +1,11 @@
+applications:
+- path: output/webApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: conv-mls
+  host: conv-mls
+  disk_quota: 1024M
+  services:
+  - conv-mls-personality_insights
+  - availability-monitoring-auto
